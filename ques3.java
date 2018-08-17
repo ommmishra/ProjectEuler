@@ -1,4 +1,4 @@
-public class ques3{
+public class grtr{
 	
 	 public static boolean isPrime(long n) {
 			if (n <= 1) {
@@ -20,23 +20,30 @@ public class ques3{
 	
 	public static void main (String[]args) {
 		long n=600851475143L;
+		long i;
 		long a = 0;
 		
 		
-		 while(n>1)
+		
+			for(i = 2; i < n; i++){
+			if(n%i == 0)
 			{
-			if(n%n == 0)
-			{
-			
-				if(isPrime(n))
+				if(isPrime( n/i ))
 				{
-					a=n;
-					break;	
+					a = n/i;
+					break;
 				}
-				
+					if(isPrime(i))
+				{	
+					
+						a=i;
+					
+				}
+				}
 			}
-				n=n-1;
-			}
+		
+			
+			
 		System.out.println(a);
 	}
 }
