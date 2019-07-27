@@ -1,4 +1,4 @@
-public class ques10{
+public class ques9{
 	public static void main (String[]args) {
 		int k;
 		for(int i = 1; i<1000; i++) {
